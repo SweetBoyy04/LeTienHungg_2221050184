@@ -5,8 +5,9 @@ namespace DemoController.Controllers
 
     public class DemoController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string hoTen)
         {
+            ViewBag.ThongBao = "Xin chào các bạn đến với Demo MVC " + hoTen;
             return View();
         }
     }

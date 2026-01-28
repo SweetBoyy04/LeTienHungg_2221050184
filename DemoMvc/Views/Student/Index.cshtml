@@ -1,0 +1,11 @@
+<div>
+    <form asp-action="Index" method="post">
+        <input type="text" name="StudentCore" />
+        <input type="text" name="FullName" />
+        @* <button type="submit">Gửi dữ liệu</button> *@
+        <input type="submit" value="Gửi dữ liệu" />
+    </form>
+</div>
+<div>  
+    @ViewBag.ThongBao
+</div>

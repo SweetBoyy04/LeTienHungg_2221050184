@@ -1,0 +1,10 @@
+<div>
+    <h2 style="margin-left: 500px; margin-top: 100px;"> Get Data </h2>
+</div>
+<div>
+    <form method="post" asp-action="Index" asp-controller="Form">
+        <input type="text" name="hoTen" placeholder="Nhập họ tên" style="margin-left: 500px; margin-top: 100px;" required />
+        <button type="submit" style="border: 5px; background-color: #007bff; color: white;">Gửi</button>
+    </form>
+</div>
+<h3>@ViewBag.ThongBao</h3>      

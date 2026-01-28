@@ -31,6 +31,12 @@
     III , Mối quan hệ giữ View và Controller 
            URL  →  Controller  →  Action  →  View
            ( Đã giải thích ở trên)
-
+# 5 , Viewbag 
+    Được dùng để truyền dữ liệu từ controller sang View trong ASP.Net.MVC . Dữ liệu được gán trong Controller và truy cập trực tiếp trong View thông qua @Viewbag.tenbien
+    * Lưu ý : 
+        ViewBag không có kiểu dữ liệu cố định 
+        Chỉ dùng 1 request
+        Viết sai tên -> null, không báo lỗi compile
+        
         
 
