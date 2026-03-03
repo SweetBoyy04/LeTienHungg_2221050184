@@ -1,7 +1,8 @@
-namespace StudentController.Controllers
-{
     using DemoMvc.Models.Entities;
     using Microsoft.AspNetCore.Mvc;
+namespace StudentController.Controllers
+{
+
 
     public class StudentController : Controller
     {

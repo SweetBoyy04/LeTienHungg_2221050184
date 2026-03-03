@@ -1,8 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace DemoMvc.Models.Entities
 {
     public class Student
     {
-        public String StudentCore { get; set; }
-        public String FullName { get; set; }
+        [Key]
+        public String StudentCore { get; set; } = default!;
+        public String FullName { get; set; } = default!;
+
+        public int Age { get; set; } = default!;
     }
 }
