@@ -14,5 +14,7 @@ namespace DemoMvc.Data
         // public DbSet<Product> Products { get; set; }
         public DbSet<Models.Entities.Student> Students { get; set; } //      tạo bảng Students trong database
         public DbSet<Models.Entities.Produce> Produces { get; set; } //      tạo bảng Produces trong database
+
+        public DbSet<Models.Entities.Student1> Student1s { get; set; } //      tạo bảng Student1s trong database
     }
 }
