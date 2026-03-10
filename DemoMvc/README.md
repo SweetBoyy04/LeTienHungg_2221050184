@@ -48,6 +48,7 @@
         Viết sai tên -> null, không báo lỗi compile
 
 # 6 , Kết Nối DataBase
+
     Cài đặt tool hỗ trợ quản lý phiên bản CSDL (Migrations), tool hỗ trợ sinh mã nguồn
     Cài đặt các package (các gói hỗ trợ để kết nối và làm việc với cơ sở dữ liệu)
     Link : https://learn.microsoft.com/vi-vn/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-6.0&tabs=visual-studio-code
@@ -58,3 +59,15 @@
         dotnet ef migrations add Create_Table_Students
         dotnet ef database update
 
+# 7 , CRUD
+ 
+    1, Model : t phải định nghĩa dữ liệu 
+        ↓
+    2, DbContext (DbSet) : nhớ tạo bảng Db<set>
+        ↓
+    3, Migration → tạo DB : ef migration add , database update, remove , vvv
+        ↓
+    4, Controller (CRUD logic) dùng bất đồng bộ async
+        ↓
+    5, View (hiển thị UI) 
+    

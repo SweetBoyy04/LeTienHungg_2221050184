@@ -1,23 +1,29 @@
-@model IEnumerable<DemoMvc.Models.Entities.Student1>
-  <table class="table">
+@model IEnumerable<DemoMvc.Models.Entities.Student1> // Sử dụng IEnumerable để hiển thị danh sách sinh viên
+<h2>Danh sách sinh viên</h2>
+<table class="table">
     <thead>
         <tr>
-            <th>Name</th>
-          
-            <th>Age</th>
+            <th>Mã sinh viên</th>
+            <th>Họ và tên</th>
+            <th>Ngày sinh</th>
             <th>Email</th>
         </tr>
     </thead>
-        <tbody>
-        @foreach (var student in Model)
+    <tbody>
+        @foreach (var item in Model)
         {
             <tr>
-                <td>@student.StudentCode</td>
-                <td>@student.FullName</td>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Age.ToString("dd/MM/yyyy")</td>
+                <td>@item.Email</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@student.StudentCode">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@student.StudentCode">Delete</a>
+                    <a asp-action="Create" asp-route-id="@item.Id">Create</a>|
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                 </td>
+
             </tr>
         }
     </tbody>
+</table>
