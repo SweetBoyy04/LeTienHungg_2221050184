@@ -1,20 +1,25 @@
+@model DemoMvc.Models.Entities.Student1
 <h2>Create Student</h2>
 <form asp-action="Create" method="post">
   <div class="form-group">
     <label>Mã sinh viên</label>
     <input type="text" class="form-control" name="Id" placeholder="Nhập mã sinh viên">
+    <span asp-validation-for="Id" class="text-danger"></span>
   </div>
   <div class="form-group">
     <label>Họ và tên</label>
     <input type="text" class="form-control" name="Name" placeholder="Nhập họ và tên">
+    <span asp-validation-for="Name" class="text-danger"></span>
   </div>
   <div class="form-group">
     <label>Ngày sinh</label>
     <input type="text" class="form-control" name="Age">
+    <span asp-validation-for="Age" class="text-danger"></span>
   </div>
   <div class="form-group">
     <label>Email</label>
     <input type="email" class="form-control" name="Email" placeholder="Nhập email">
+    <span asp-validation-for="Email" class="text-danger"></span>
   </div>
   <div class="form-group d-flex justify-content-center pt-3 ">
     <input type="submit" value="Create" class="btn btn-primary" />
